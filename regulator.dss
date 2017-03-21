@@ -1,3 +1,0 @@
-New Transformer.T3 phases=3 windings=2 buses=(34085402,34085402reg) conns=(wye,wye) kvs=(13.2,13.2) kvas=(30000,30000)
-~ xhl=0.03 wdg=1 %r=0.0000001 wdg=2 %r=0.0000001 mintap=0.9 maxtap=1.1
-New regcontrol.T3 transformer=T3 vreg=(122) winding=2 band=3 ptratio=63.50852961 delay=40
