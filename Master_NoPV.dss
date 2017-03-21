@@ -1,0 +1,39 @@
+Clear
+New Circuit.EPRIK1  pu=1.00 bus1=Trans_equiv basekv=13.2 r1=1e-9 x1=1e-9 r0=1e-9 x0=1e-9
+Redirect Substation.dss
+Redirect LineCodes.dss
+Redirect Lines.dss
+Redirect xfmrs.dss
+Redirect services.dss
+Redirect loads.dss
+Redirect Capacitors.dss
+Redirect regulator.dss
+
+Set voltagebases = [13.2, .4156922]
+Calcv
+Redirect vbases.dss
+
+Set maxiter=200
+Set maxcontroliter=60
+
+New energymeter.K21_feeder element=line.K21_feeder term=1 option=R peakcurrent=(224.8647,207.6677,211.8367) PhaseVolt=yes
+
+
+New monitor.subVI element=Transformer.T2 terminal=2 mode=0
+New monitor.subPQ element=Transformer.T2 terminal=1 mode=65 PPolar=No
+New monitor.subVI element=Transformer.T3 terminal=2 mode=0
+New monitor.subPQ element=Transformer.T3 terminal=1 mode=65 PPolar=No
+New monitor.feederPQ element=line.K21_feeder terminal=1 mode=65 PPolar=No
+New monitor.Tap1 element=Transformer.T2 terminal=2 mode=2
+New monitor.Tap2 element=Transformer.T3 terminal=2 mode=2
+New monitor.Cap1 element=Capacitor.10548920-1 mode=33
+New monitor.VoltageCap1 element=Capacitor.10548920-1 terminal=1 mode=0
+New monitor.VoltageTap1 element=Transformer.T2 terminal=2 mode=0
+New monitor.VoltageTap2 element=Transformer.T3 terminal=2 mode=0
+New monitor.HighestImpedanceBus element=Line.UG_10540314 terminal=2 mode=0
+
+solve mode=snap
+
+Buscoords Buscoords.dss
+
+Plot Profile Phases=ALL
