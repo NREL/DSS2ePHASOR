@@ -1,0 +1,4 @@
+New Transformer.T2 phases=3 windings=2 buses=(Trans_equiv, K_LSB) conns=(wye,wye) kvs=(13.2, 13.2) kvas=(12000, 12000)
+~ xhl=7.904196143 wdg=1 %r=0.250041667 wdg=2 %r=0.250041667 mintap=0.9 maxtap=1.1
+New line.K21_feeder bus1=K_LSB bus2=K21 phases=3 switch=y length=0.000001 units=ft enabled=true
+New regcontrol.T2 transformer=T2 vreg=(122) winding=2 band=3 ptratio=63.50852961 delay=30
