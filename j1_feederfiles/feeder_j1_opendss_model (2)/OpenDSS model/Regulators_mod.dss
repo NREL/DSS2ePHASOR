@@ -1,0 +1,6 @@
+New Transformer.T3 phases=3 windings=2 buses=(B18862,B18865reg) conns=(wye,wye) kvs=(12.47,12.47) kvas=(30000,30000) xhl=0.03 wdg=1 %r=0.0000001 wdg=2 %r=0.0000001 mintap=0.9 maxtap=1.1
+New regcontrol.T3 transformer=T3 vreg=(124) winding=2 band=2 ptratio=60 delay=40
+New Transformer.T4 phases=3 windings=2 buses=(B4877,B4870reg) conns=(wye,wye) kvs=(12.47,12.47) kvas=(30000,30000) xhl=0.03 wdg=1 %r=0.0000001 wdg=2 %r=0.0000001 mintap=0.9 maxtap=1.1
+New regcontrol.T4 transformer=T4 vreg=(124) winding=2 band=2 ptratio=60 delay=50
+New Transformer.T5 phases=2 windings=2 buses=(B19007,B19007reg) conns=(wye, wye) kvs=(12.47,12.47) kvas=(20000, 20000) xhl=0.03 wdg=1 %r=0.0000001 wdg=2 %r=0.0000001 mintap=0.9 maxtap=1.1
+New RegControl.T5 transformer=T5 vreg=(124) winding=2 band=2 ptratio=60 delay=60

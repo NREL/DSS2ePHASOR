@@ -1,0 +1,23 @@
+!- Define Energy Meter @ Sub
+New EnergyMeter.J1 element=Line.OH_5964927408 terminal=1 !peakcurrent=[393, 393, 393]
+
+! - Define all monitors
+
+New monitor.subVI element=Transformer.SubXfmr terminal=2 mode=0
+New monitor.subPQ element=Transformer.SubXfmr terminal=1 mode=65 PPolar=No
+New monitor.feederPQ element=Line.OH_5964927408 terminal=1 mode=65 PPolar=No
+
+!Sub
+New monitor.Tap9 element=Transformer.SubXfmr terminal=2 mode=2
+
+! 1st regulator
+New monitor.Tap3 element=Transformer.T3 terminal=2 mode=2
+
+!Middle Regulator - just downstraam
+New monitor.Tap4 element=Transformer.T4 terminal=2 mode=2
+
+
+New monitor.VoltageTap1 element=Transformer.T3 terminal=2 mode=0
+New monitor.VoltageTap2 element=Transformer.T4 terminal=2 mode=0
+
+New monitor.HighestImpedanceBus element=LINE.OH_5962929303 terminal=2 mode=0

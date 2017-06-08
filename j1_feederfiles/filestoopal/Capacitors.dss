@@ -1,0 +1,5 @@
+New Capacitor.B4909-1 bus=B4909 kV=12.47 kvar=900 conn=wye
+New Capacitor.B18944 bus=B18941 kV=12.47 kvar=1200 conn=wye
+New Capacitor.B4862-1 bus=B4862 kV=12.47 kvar=600 conn=wye
+New Capacitor.B4829-1 bus=B4829 kV=12.47 kvar=600 conn=wye
+New Capacitor.B4877-1 bus=B4877 kV=12.47 kvar=600 conn=wye
