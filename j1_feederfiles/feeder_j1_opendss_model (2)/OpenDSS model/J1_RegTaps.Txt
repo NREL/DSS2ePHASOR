@@ -1,9 +1,0 @@
-
-CONTROLLED TRANSFORMER TAP SETTINGS
-
-Name            Tap      Min       Max     Step  Position
-
-subxfmr       1.02500  0.90000  1.10000  0.00625     4
-t3            1.01875  0.90000  1.10000  0.00625     3
-t4            1.00000  0.90000  1.10000  0.00625     0
-t5            1.05625  0.90000  1.10000  0.00625     9
